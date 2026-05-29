@@ -36,6 +36,7 @@ img {
 
 /* Navbar */
 .navbar {
+    background-color: var(--dark-color);
     padding: 24px;
 }
 
@@ -93,6 +94,55 @@ img {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 16px;
+}
+
+/* Hero Section */
+.container-hero {
+    margin-top: -24px;
+    height: 100%;
+    position: relative;
+}
+
+.hero {
+    height: 80vh;
+    background: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    gap: 40px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.tag-line {
+    color: var(--headline-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.tag-description {
+    color: var(--link-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn-primary-hero {
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    font-weight: 600;
 }
 
 /* Buttons */
