@@ -4,16 +4,26 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #f9bc60;
+    --secondary-color: #abd1c6;
+    --dark-color: #001e1d;
+    --headline-color: #fffffe;
+    --link-color: #fef2df;
+    --background-color: #004643;
+    --tertiary-color: #e16162;
+}
+
 body {
     font-family: 'fredoka', 'poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: #004643;
+    background: var(--background-color);
 }
 
 a {
     text-decoration: none;
-    color: #FEF2DF;
+    color: var(--link-color);
 }
 
 ul {
@@ -49,7 +59,7 @@ img {
 }
 
 .navbar ul li a:hover {
-    color: #f9bc60;
+    color: var(--primary-color);
 }
 
 .logo-img {
