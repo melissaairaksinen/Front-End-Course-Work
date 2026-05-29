@@ -23,3 +23,30 @@ ul {
 img {
     max-width: 100%;
 }
+
+/* Navbar */
+.navbar {
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+}
+
+.logo-img {
+    width: 16rem;
+    max-width: 100%;
+    height: auto;
+}
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
