@@ -86,21 +86,32 @@ img {
 
 /*Hero */
 .hero {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .hero .container {
-    background: url('/ProjectWork/images/rasberry.svg') no-repeat;
+    background: url('/ProjectWork/images/hero-image.jpg') no-repeat;
     background-size: contain;
     background-position: center bottom;
     height: 550px;
+}
+
+.hero .hero-content {
+    width: 75%;
+    color: var(--headline-color);
+}
+
+.hero .hero-text {
+    width: 80%;
+    margin-bottom: 16px;
+    color:var(--headline-color);
 }
 
 /* Utility Classes */
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
 }
 
 .container-sm {
