@@ -90,7 +90,7 @@ img {
 }
 
 .hero .container {
-    background: url('/ProjectWork/images/hero-image.jpg') no-repeat;
+    background: url('/ProjectWork/images/heroimagelarge.png') no-repeat;
     background-size: contain;
     background-position: center bottom;
     height: 550px;
@@ -109,7 +109,7 @@ img {
 
 /* Utility Classes */
 .container {
-    max-width: 1100px;
+    max-width: 1100px; 
     margin: 0 auto;
     padding: 0 24px;
 }
