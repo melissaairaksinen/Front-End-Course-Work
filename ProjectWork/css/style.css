@@ -110,6 +110,21 @@ img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Recipe Video Section */
+.video {
+    padding: 8px 0 40px;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-preview {
+    margin-bottom: 24px;
+}
+
 /*Services */
 .services {
     padding: 40px 0;
