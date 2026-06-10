@@ -110,6 +110,27 @@ img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Services */
+.services {
+    padding: 40px 0;
+}
+
+.services .services-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.services .card p:nth-child(1) {
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
 /* Utility Classes */
 .container {
     max-width: 1170px; 
@@ -198,4 +219,28 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+/*Background */
+.bg-primary {
+    background: var(--background-color);
+    color:#fffffe;
+}
+
+.bg-light {
+    background: var(--secondary-color);
+    color: #001e1d;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color:#fffffe
+}
+
+/*Card */
+.card {
+    background: var(--headline-color);
+    color: #000;
+    border-radius: 8px;
+    padding: 16px;
 }
