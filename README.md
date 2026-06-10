@@ -1,0 +1,1 @@
+This is my work for Software Development Skills: Front-End course. It includes folders for course work that followed example and project work, which is personalized version of responsive website. Learning diary is located in its own folder. 
