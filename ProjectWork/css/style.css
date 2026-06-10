@@ -73,7 +73,7 @@ img {
 }
 
 .navbar ul li:last-child a:hover {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: var(--dark-color);
     transition: 0.8s;
 }
@@ -86,6 +86,7 @@ img {
 
 /*Hero */
 .hero {
+    margin: 0 24px;
     margin-bottom: 48px;
 }
 
@@ -97,19 +98,21 @@ img {
 }
 
 .hero .hero-content {
-    width: 75%;
+    width: 100%;
     color: var(--headline-color);
+    text-align: center;
 }
 
 .hero .hero-text {
-    width: 80%;
-    margin-bottom: 16px;
-    color:var(--headline-color);
+    width: 100%;
+    margin-bottom: 32px;
+    color:var(--link-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Utility Classes */
 .container {
-    max-width: 1100px; 
+    max-width: 1170px; 
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -137,7 +140,7 @@ img {
 }
 
 .btn:hover {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     color: var(--dark-color);
     transition: 0.8s;
 }
