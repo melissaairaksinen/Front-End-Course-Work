@@ -94,13 +94,14 @@ img {
     background: url('/ProjectWork/images/heroimagelarge.png') no-repeat;
     background-size: contain;
     background-position: center bottom;
-    height: 550px;
+    height: 650px;
 }
 
 .hero .hero-content {
     width: 100%;
     color: var(--headline-color);
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero .hero-text {
@@ -115,13 +116,13 @@ img {
     padding: 8px 0 40px;
 }
 
-.video-content {
+.video .video-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.video-preview {
+.video .video-preview {
     margin-bottom: 24px;
 }
 
@@ -135,16 +136,54 @@ img {
     margin-bottom: 40px;
 }
 
-.services-grid {
+.services .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
 .services .card p:nth-child(1) {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     font-weight: 600;
 }
+
+.services .card p:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+/*Zoom Classes*/
+.zoom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.zoom .zoom-card-subheading {
+    margin-bottom: 24px;
+}
+.zoom .zoom-card-price {
+    margin-bottom: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid #fffffe;
+}
+
+.zoom ul {
+    margin: 24px 0;
+}
+
+.zoom ul li {
+    margin-bottom: 16px;
+}
+
+.zoom ul li i {
+    margin-right: 8px;
+}
+
+.zoom .zoom-footer {
+    margin: 32px 0;
+}
+
 
 /* Utility Classes */
 .container {
@@ -159,7 +198,13 @@ img {
     padding: 0 16px;
 }
 
-
+/*Card */
+.card {
+    background: var(--headline-color);
+    color: #000;
+    border-radius: 8px;
+    padding: 16px;
+}
 
 /* Buttons */
 .btn {
@@ -167,11 +212,12 @@ img {
     padding: 8px 16px;
     background: var(--dark-color);
     color: var(--link-color);
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    text-align: center;
     transition: 0.4s;
 }
 
@@ -187,8 +233,8 @@ img {
 }
 
 .btn-light {
-    background: var(--tertiary-color);
-    color: var(--link-color);
+    background: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 .btn-block {
@@ -252,10 +298,3 @@ img {
     color:#fffffe
 }
 
-/*Card */
-.card {
-    background: var(--headline-color);
-    color: #000;
-    border-radius: 8px;
-    padding: 16px;
-}
