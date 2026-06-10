@@ -19,6 +19,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background: var(--background-color);
+    overflow-x: hidden;
 }
 
 a {
@@ -79,7 +80,7 @@ img {
 }
 
 .logo-img {
-    width: 16rem;
+    width: 10rem;
     max-width: 100%;
     height: auto;
 }
@@ -341,3 +342,123 @@ img {
     color:#fffffe
 }
 
+/*Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 32px;
+    height: 4px;
+    background: var(--headline-color);
+    margin: 4px 0;
+}
+
+/*Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 240px;
+    height: 100%;
+    z-index: 100;
+    background: var(--background-color);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    transition: right 0.2s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 8px;
+}
+
+.mobile-menu ul li {
+    margin: 8px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+/*Media Queries */
+@media (max-width: 960px) {
+    .text-xxl {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+
+    .hero .container {
+        background: url('../images/raspberryfox.png') no-repeat;
+        background-size: 300px 400px;
+        background-position: center bottom;
+        height: 700px;
+    }
+
+    .hero .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-buttons .btn {
+        margin-bottom: 8px;
+        display: block;
+        width: 100%;
+    }
+
+    /*Services */
+    .services .services-heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services .services-grid, .zoom .zoom-grid, .footer .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .card {
+        margin-right: 0;
+    }
+
+    .footer .footer-grid > div {
+        text-align: center;
+    }
+
+    /*Text */
+    .text-xl {
+        font-size: 1.9rem;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-xxl {
+        font-size: 2rem;
+    }
+}
